@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Chrome",
+    "w": 1440,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "errors": []
+  },
+  {
+    "name": "Chrome",
+    "w": 768,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "errors": []
+  },
+  {
+    "name": "Chrome",
+    "w": 390,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "menu": true,
+    "errors": []
+  },
+  {
+    "name": "Chrome",
+    "w": 320,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "menu": true,
+    "errors": []
+  },
+  {
+    "name": "Firefox",
+    "w": 390,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "menu": true,
+    "errors": []
+  },
+  {
+    "name": "WebKit",
+    "w": 390,
+    "overflow": false,
+    "broken": 0,
+    "sections": 12,
+    "chooser": true,
+    "slider": true,
+    "menu": true,
+    "errors": []
+  }
+]

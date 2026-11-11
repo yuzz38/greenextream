@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GreenExtreme — дрифт за рулём без опыта в Москве</title>
+    <meta
+      name="description"
+      content="Первый опыт в дрифте и кольце с GreenExtreme. Подготовленные автомобили, знакомство с базой, дрифт-свидания и подарочные сертификаты. Москва и Подмосковье."
+    />
+    <meta name="theme-color" content="#a2d600" />
+    <meta
+      property="og:title"
+      content="GreenExtreme — деньги заработаются. Эмоции останутся."
+    />
+    <meta
+      property="og:description"
+      content="Твой первый опыт в дрифте и кольце. Москва. Без опыта — всё покажем."
+    />
+    <meta property="og:image" content="assets/cars.webp" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/logo.webp" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { corePlugins: { preflight: false } };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+    <header>
+      <a class="brand" href="#home"
+        ><img src="assets/logo.webp" alt="GreenExtreme" loading="lazy" /><span
+          >GREEN<b>EXTREME</b></span
+        ></a
+      >
+      <nav id="nav">
+        <a href="#formats">Форматы</a><a href="#garage">Машины</a
+        ><a href="#gift">В подарок</a><a href="#places">Площадки</a
+        ><a
+          class="btn magnetic"
+          href="https://www.instagram.com/greenextreme__/"
+          target="_blank"
+          rel="noopener"
+          >Записаться<span>→</span></a
+        >
+      </nav>
+      <button
+        class="burger"
+        aria-controls="nav"
+        aria-expanded="false"
+        aria-label="Открыть меню"
+      >
+        ☰
+      </button>
+    </header>
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="hero-photo">
+          <img
+            src="assets/cars.webp"
+            alt="Две Mazda на площадке GreenExtreme"
+            loading="lazy"
+          />
+        </div>
+        <div class="wrap">
+          <h1>Первый дрифт.<br /><em>Твой.</em></h1>
+          <div class="hero-info">
+            <p>
+              Экстремальные впечатления за рулём.<br />Москва. Без опыта — всё
+              покажем.
+            </p>
+            <a
+              class="btn magnetic"
+              href="https://www.instagram.com/greenextreme__/"
+              target="_blank"
+              rel="noopener"
+              >Попробовать дрифт<span>→</span></a
+            >
+          </div>
+          <div class="hero-foot">
+            <span>ДРИФТ / КОЛЬЦО / РАЛЛИ</span
+            ><a href="#choose">Выбрать свой заезд ↓</a
+            ><span>От автолюбителей автолюбителям</span>
+          </div>
+        </div>
+      </section>
+      <section id="formats" class="">
+        <div class="wrap">
+          <h2>Не смотреть.<br /><em>Почувствовать.</em></h2>
+          <div class="formats">
+            <article>
+              <strong>Дрифт</strong>
+              <p>
+                Знакомство с управляемым заносом. Приехать попробовать или
+                разобрать базу — выбираешь ты.
+              </p>
+              <a href="#choose">Выбрать дрифт →</a>
+            </article>
+            <article>
+              <strong>Кольцо</strong>
+              <p>
+                Траектория, ритм и ощущение машины. Первый опыт на трассе без
+                привычной городской суеты.
+              </p>
+              <a href="#choose">Выбрать кольцо →</a>
+            </article>
+            <article>
+              <strong>Ралли</strong>
+              <p>
+                Другой характер движения. Расскажи, что хочешь попробовать:
+                обсудим доступный формат.
+              </p>
+              <a href="#choose">Обсудить ралли →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="choose" class="light">
+        <div class="wrap">
+          <h2>Твой характер.<br /><em>Твой заезд.</em></h2>
+          <div class="chooser">
+            <div class="drive-form">
+              <p class="drive-intro">
+                Собери впечатление под себя.<br />Мы согласуем детали перед
+                стартом.
+              </p>
+              <fieldset class="drive-group" id="discipline">
+                <legend>Что пробуем?</legend>
+                <div class="drive-options discipline">
+                  <label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="discipline"
+                      value="Дрифт"
+                      checked /><span class="option-content"
+                      ><span class="option-title">Дрифт</span
+                      ><span class="option-detail">Почувствовать занос</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="discipline"
+                      value="Кольцо" /><span class="option-content"
+                      ><span class="option-title">Кольцо</span
+                      ><span class="option-detail">Поймать ритм трассы</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input type="radio" name="discipline" value="Ралли" /><span
+                      class="option-content"
+                      ><span class="option-title">Ралли</span
+                      ><span class="option-detail"
+                        >Другой характер движения</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span
+                  ></label>
+                </div>
+              </fieldset>
+              <fieldset class="drive-group" id="goal">
+                <legend>Какой план?</legend>
+                <div class="drive-options goal">
+                  <label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="goal"
+                      value="Первый опыт"
+                      checked /><span class="option-content"
+                      ><span class="option-title">Первый опыт</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="goal"
+                      value="Обучение базе" /><span class="option-content"
+                      ><span class="option-title">Обучение базе</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="goal"
+                      value="Дрифт-свидание" /><span class="option-content"
+                      ><span class="option-title">Дрифт-свидание</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="goal"
+                      value="Подарочный сертификат" /><span
+                      class="option-content"
+                      ><span class="option-title">Подарочный сертификат</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span
+                  ></label>
+                </div>
+              </fieldset>
+              <fieldset class="drive-group" id="place">
+                <legend>Где удобнее?</legend>
+                <div class="drive-options place">
+                  <label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="place"
+                      value="Помогите выбрать площадку"
+                      checked /><span class="option-content"
+                      ><span class="option-title"
+                        >Помогите выбрать площадку</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="place"
+                      value="ЦТВС Москва" /><span class="option-content"
+                      ><span class="option-title">ЦТВС Москва</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="place"
+                      value="DNB Мега Белая дача" /><span class="option-content"
+                      ><span class="option-title">DNB Мега Белая дача</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span></label
+                  ><label class="drive-option"
+                    ><input
+                      type="radio"
+                      name="place"
+                      value="ADM Мячково" /><span class="option-content"
+                      ><span class="option-title">ADM Мячково</span
+                      ><span
+                        class="option-check"
+                        aria-hidden="true"
+                      ></span></span
+                  ></label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="ticket">
+              <span>ТВОЙ СТАРТ</span>
+              <h3 id="ticket-title">Дрифт / Первый опыт</h3>
+              <p id="request" aria-live="polite"></p>
+              <button id="copy" class="btn">Скопировать пожелания →</button
+              ><a
+                class="btn magnetic"
+                href="https://www.instagram.com/greenextreme__/"
+                target="_blank"
+                rel="noopener"
+                >Написать в Instagram<span>→</span></a
+              >
+              <p id="copy-status" role="status"></p>
+              <small
+                >Стоимость, длительность, требования к участнику и доступность
+                площадки согласуем до оплаты.</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="motion" class="drift-explained">
+        <div class="wrap">
+          <div class="drift-heading">
+            <h2>Контролируемый занос.<br /><em>Не случайность. Навык.</em></h2>
+            <p>
+              Машина движется боком, а водитель управляет её направлением. В
+              этом и суть дрифта: почувствовать баланс автомобиля и работать с
+              ним.
+            </p>
+          </div>
+          <div class="drift-gallery">
+            <div class="drift-large">
+              <img
+                src="assets/frame2-1.webp"
+                alt="Mazda проходит площадку в контролируемом заносе"
+                loading="lazy"
+              />
+            </div>
+          
+            <div class="drift-note">
+              <span aria-hidden="true">↔</span>
+              <h3>Боком.<br />Но под контролем.</h3>
+              <p>
+                Не про резкое движение рулём. Про понимание машины и
+                согласованную работу рулём и тягой.
+              </p>
+            </div>
+          </div>
+          <div class="drift-points">
+            <article>
+              <h3>Что происходит</h3>
+              <p>
+                Задние колёса скользят, автомобиль поворачивается относительно
+                направления движения. Водитель удерживает нужную траекторию.
+              </p>
+            </article>
+            <article>
+              <h3>Как знакомимся с базой</h3>
+              <p>
+                Сначала разбираем управление и правила площадки. Затем переходим
+                к упражнениям согласованной программы, учитывая твой опыт.
+              </p>
+            </article>
+            <article>
+              <h3>Где пробуем</h3>
+              <p>
+                На подготовленной площадке. Формат и условия участия уточняем
+                заранее — такой опыт начинается с объяснений, а не с
+                импровизации на дороге.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="garage" class="">
+        <div class="wrap">
+          <h2>Не просто машины.<br /><em>Наш общий язык.</em></h2>
+          <div class="garage-grid">
+            <div class="garage-photo">
+              <img
+                src="assets/garage.webp"
+                alt="Подготовка Mazda в мастерской"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h3>Автолюбителям<br />от автолюбителей.</h3>
+              <p>
+                Мы такие же петролхеды. Нам важны и сами машины, и то чувство,
+                ради которого садишься за руль.
+              </p>
+              <p>
+                Подготовленный автомобиль — часть твоего опыта. А какой именно
+                будет на заезде, уточним при записи.
+              </p>
+              <a
+                class="btn magnetic"
+                href="https://www.instagram.com/greenextreme__/"
+                target="_blank"
+                rel="noopener"
+                >Обсудить автомобиль<span>→</span></a
+              >
+            </div>
+            <div class="garage-detail">
+              <img
+                src="assets/garage-detail.webp"
+                alt="Mazda в мастерской GreenExtreme"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gift" class="gift">
+        <div class="wrap">
+          <h2>Деньги заработаются.<br /><em>Эмоции останутся.</em></h2>
+          <div class="gift-grid">
+            <div>
+              <p class="big">Что подарить парню?<br />Ответ — в этом видео.</p>
+              <p>
+                Подарочный сертификат на впечатление, которое не окажется на
+                дальней полке. Или дрифт-свидание: вместо обычного вечера —
+                общая история.
+              </p>
+              <a
+                class="btn magnetic"
+                href="https://www.instagram.com/greenextreme__/"
+                target="_blank"
+                rel="noopener"
+                >Выбрать сертификат<span>→</span></a
+              ><small
+                >Формат, срок действия и условия использования сертификата
+                уточни до покупки.</small
+              >
+            </div>
+            <div class="player p1">
+              <video
+                playsinline
+                preload="none"
+                poster="assets/frame1-1.webp"
+                aria-label="Что подарить парню — дрифт на Mazda"
+              >
+                <source src="assets/film1.mp4" type="video/mp4" /></video
+              ><button
+                class="play"
+                aria-label="Воспроизвести: Что подарить парню — дрифт на Mazda"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 10 7-10 7Z" />
+                </svg>
+              </button>
+              <div class="controls">
+                <button class="pause" aria-label="Пауза">Ⅱ</button
+                ><input
+                  class="seek"
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  aria-label="Позиция видео"
+                /><button class="sound" aria-label="Выключить звук">Звук</button
+                ><button class="full" aria-label="На весь экран">⛶</button>
+              </div>
+              <p class="video-error" role="status"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="live" class="">
+        <div class="wrap">
+          <h2>Вот так выглядит<br /><em>«я попробовал».</em></h2>
+          <div class="video-grid">
+            <div class="player p0">
+              <video
+                playsinline
+                preload="none"
+                poster="assets/frame0-1.webp"
+                aria-label="Дрифт-свидание GreenExtreme"
+              >
+                <source src="assets/film0.mp4" type="video/mp4" /></video
+              ><button
+                class="play"
+                aria-label="Воспроизвести: Дрифт-свидание GreenExtreme"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 10 7-10 7Z" />
+                </svg>
+              </button>
+              <div class="controls">
+                <button class="pause" aria-label="Пауза">Ⅱ</button
+                ><input
+                  class="seek"
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  aria-label="Позиция видео"
+                /><button class="sound" aria-label="Выключить звук">Звук</button
+                ><button class="full" aria-label="На весь экран">⛶</button>
+              </div>
+              <p class="video-error" role="status"></p>
+            </div>
+            <div class="player p2">
+              <video
+                playsinline
+                preload="none"
+                poster="assets/frame2-1.webp"
+                aria-label="Mazda в дрифте на площадке"
+              >
+                <source src="assets/film2.mp4" type="video/mp4" /></video
+              ><button
+                class="play"
+                aria-label="Воспроизвести: Mazda в дрифте на площадке"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 10 7-10 7Z" />
+                </svg>
+              </button>
+              <div class="controls">
+                <button class="pause" aria-label="Пауза">Ⅱ</button
+                ><input
+                  class="seek"
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  aria-label="Позиция видео"
+                /><button class="sound" aria-label="Выключить звук">Звук</button
+                ><button class="full" aria-label="На весь экран">⛶</button>
+              </div>
+              <p class="video-error" role="status"></p>
+            </div>
+            <div class="player p3">
+              <video
+                playsinline
+                preload="none"
+                poster="assets/frame3-1.webp"
+                aria-label="Mazda на трассе"
+              >
+                <source src="assets/film3.mp4" type="video/mp4" /></video
+              ><button class="play" aria-label="Воспроизвести: Mazda на трассе">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 10 7-10 7Z" />
+                </svg>
+              </button>
+              <div class="controls">
+                <button class="pause" aria-label="Пауза">Ⅱ</button
+                ><input
+                  class="seek"
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  aria-label="Позиция видео"
+                /><button class="sound" aria-label="Выключить звук">Звук</button
+                ><button class="full" aria-label="На весь экран">⛶</button>
+              </div>
+              <p class="video-error" role="status"></p>
+            </div>
+          </div>
+          <p>
+            Без постановочных обещаний. Наши машины, наши заезды, живые моменты.
+          </p>
+        </div>
+      </section>
+      <section id="start" class="light">
+        <div class="wrap">
+          <h2>Без опыта?<br /><em>С этого и начнём.</em></h2>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <h3>Расскажи о себе</h3>
+              <p>Что уже пробовал, чего ждёшь и какой формат интересен.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Разберись с базой</h3>
+              <p>
+                До старта познакомимся с машиной, порядком занятия и правилами
+                площадки.
+              </p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Попробуй за рулём</h3>
+              <p>
+                Формат и упражнения подбираются под согласованную программу и
+                твой опыт.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="stories" class="">
+        <div class="wrap">
+          <h2>Впечатления —<br /><em>в первом лице.</em></h2>
+          <div class="stories">
+            <div>
+              <img
+                src="assets/frame0-1.webp"
+                alt="Участница заезда GreenExtreme"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p id="story">
+                Дрифт-свидание: подарок молодому человеку и впечатление на
+                двоих.
+              </p>
+              <small
+                >История из материалов бренда. Отзывы и отметки участников — в
+                Instagram.</small
+              >
+              <div class="arrows">
+                <button id="prev" aria-label="Предыдущая история">←</button
+                ><span id="story-count">1 / 3</span
+                ><button id="next" aria-label="Следующая история">→</button>
+              </div>
+              <a
+                class="btn magnetic"
+                href="https://www.instagram.com/greenextreme__/"
+                target="_blank"
+                rel="noopener"
+                >Посмотреть отзывы<span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="places" class="">
+        <div class="wrap">
+          <h2>Встречаемся<br /><em>на площадке.</em></h2>
+          <div class="places">
+            <button data-query="ЦТВС Москва">
+              ЦТВС «Москва» <span>Москва →</span></button
+            ><button data-query="DNB Мега Белая дача">
+              DNB Мега Белая дача <span>Подмосковье →</span></button
+            ><button data-query="ADM Raceway Мячково">
+              ADM Мячково <span>Подмосковье →</span>
+            </button>
+          </div>
+          <p>
+            Площадку, точку встречи и доступный формат подтверждаем при записи.
+          </p>
+          <div id="map-panel" hidden>
+            <p id="map-name"></p>
+            <a id="map-link" class="btn" target="_blank" rel="noopener"
+              >Открыть на карте →</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="">
+        <div class="wrap">
+          <h2>Перед стартом<br /><em>есть вопросы.</em></h2>
+          <div class="faq">
+            <details>
+              <summary>Нужен опыт в дрифте?<span>+</span></summary>
+              <p>
+                Нет. GreenExtreme рассчитан в том числе на первый опыт. Расскажи
+                об уровне вождения при записи — согласуем подходящий формат.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Нужны права и есть ли ограничения по возрасту?<span>+</span>
+              </summary>
+              <p>
+                Требования зависят от программы и площадки. Уточни возраст,
+                наличие прав и другие условия допуска у команды до оплаты.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Сколько стоит и сколько длится заезд?<span>+</span>
+              </summary>
+              <p>
+                Цены и длительность в исходных материалах не указаны. Напиши,
+                что хочешь попробовать: команда подберёт доступный вариант и
+                подтвердит стоимость.
+              </p>
+            </details>
+            <details>
+              <summary>Можно приехать вдвоём?<span>+</span></summary>
+              <p>
+                Да, можно обсудить дрифт-свидание. Сценарий участия, количество
+                заездов и условия для каждого согласуются отдельно.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Что делать, если погода изменится?<span>+</span>
+              </summary>
+              <p>
+                Погода и состояние площадки могут влиять на программу. Условия
+                переноса и отмены лучше уточнить при записи.
+              </p>
+            </details>
+            <details>
+              <summary>Можно подарить сертификат?<span>+</span></summary>
+              <p>
+                Да. До покупки согласуй программу, стоимость, срок действия и
+                порядок записи получателя.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="green">
+        <div class="wrap">
+          <h2>Хватит представлять.<br /><em>Пора попробовать.</em></h2>
+          <div class="contact-row">
+            <p>
+              Первый дрифт начинается с сообщения.<br />Расскажи, для себя ты
+              или в подарок.
+            </p>
+            <a
+              class="btn magnetic"
+              href="https://www.instagram.com/greenextreme__/"
+              target="_blank"
+              rel="noopener"
+              >Записаться в GreenExtreme<span>→</span></a
+            >
+          </div>
+          <a class="handle" href="https://www.instagram.com/greenextreme__/"
+            >@greenextreme__</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <span>GREENEXTREME · Москва</span
+      ><span>От автолюбителей автолюбителям</span><span>© 2026</span>
+    </footer>
+    <div class="cursor" aria-hidden="true"></div>
+  </body>
+</html>
